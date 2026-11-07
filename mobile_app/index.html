@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>H2R Nigeria</title>
+  <meta name="description" content="Hard to Reach assessment results for north-east Nigeria, by LGA and sector. Works offline.">
+  <meta name="theme-color" content="#b8312f" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16181b" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="H2R Nigeria">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <div class="brand-title">H2R Nigeria</div>
+          <div class="brand-sub" id="round-label">Loading…</div>
+        </div>
+      </div>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36A5.5 5.5 0 0 1 13.36 3.1 9.1 9.1 0 0 0 12 3Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <div class="loading">Loading data…</div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <nav class="tabbar" aria-label="Main">
+    <a href="#/overview" data-tab="overview">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg>
+      <span>Overview</span>
+    </a>
+    <a href="#/explore" data-tab="explore">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10m7 10V4m7 16v-7"/></svg>
+      <span>Indicators</span>
+    </a>
+    <a href="#/compare" data-tab="compare">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16M9 3v18M15 3v18"/></svg>
+      <span>Compare</span>
+    </a>
+    <a href="#/findings" data-tab="findings">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h9l3 3v13H6zM9 11h6M9 15h6M9 7h3"/></svg>
+      <span>Findings</span>
+    </a>
+    <a href="#/about" data-tab="about">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></svg>
+      <span>About</span>
+    </a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
