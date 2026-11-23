@@ -1,0 +1,5 @@
+# Anonymisierung: Geheimnisse und Rohdaten nie committen
+.kobo_salt
+*_PSEUDONYM_MAPPING_PRIVATE.csv
+data_raw/
+__pycache__/
